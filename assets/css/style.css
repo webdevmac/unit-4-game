@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.body {
+
+    background-image: url("../images/background1.jpg");
+    height: fit-content;
+    width: fit-content;
+
+}
+.container {
+
+    width: fit-content;
+}
+
+
+.starWars {
+    color: white;
+    text-align: center; 
+}
+
+h4 {
+    color: ghostwhite
+
+}
+
+p {
+
+    color: black;
+
+}
+
+    .labelchar1, 
+    .labelchar2, 
+    .labelchar3, 
+    .labelchar4  {
+
+        background-color: beige;
+        color: black;
+        font-style: bold;
+        position: relative;
+        top: 70px;
+        text-align: center;
+        font-size: 11px;
+        padding: 0px;
+
+    }
+.img1 {
+        
+        
+    background-image: url("../images/JabbaTheHut.jpeg");
+    padding:0px;
+    width: 100px;
+    height: 80px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-color: beige;
+    border-width: thick;
+
+
+}
+
+
+.img2 {
+    
+    background-image: url("../images/stormtrooper.jpeg");
+    padding: 0px;
+    width: 100px;
+    height: 80px;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.img3 {
+
+    
+    background-image: url("../images/Chewbacca.jpeg");
+    padding: 0px;
+    width: 100px;
+    height: 80px;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.img4 {
+
+    background-image: url("../images/images.jpeg");
+    padding: 0px;
+    width: 100px;
+    height: 80px;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
