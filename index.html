@@ -24,9 +24,10 @@
         </div>
 
         <div class="characters">
-            <h4 id="charAvailable">Your charactors</h4>
+            <h4 id="h4-1">Your characters</h4>
 
             <div class="row">
+                
                 <div class="char1 img1">
                     <div class="labelchar1">Jabba The Hutt</div>
                 </div>
@@ -41,28 +42,28 @@
                 </div>
             </div>
 
-            <h4 id="charSelected">Your charactors</h4>
+            <h4 id="h4-2">Your characters</h4>
         </div>
 
         <div class="enemies">
-            <h4 id="enemyAvailable">Enemies Available To Attack</h4>
+            <h4 id="h4-3">Enemies Available To Attack</h4>
 
             <div class="row">
-                <div class="char1 img1">
+                <div class="char5 img1">
                     <div class="labelchar1">Jabba The Hutt</div>
                 </div>
-                <div class="char2 img2">
+                <div class="char6 img2">
                     <div class="labelchar2">Stormtrooper</div>
                 </div>
-                <div class="char3 img3">
+                <div class="char7 img3">
                     <div class="labelchar3">Chewbacca</div>
                 </div>
-                <div class="char4 img4">
+                <div class="char8 img4">
                     <div class="labelchar4">Darth Vader</div>
                 </div>
 
             </div>
-            <h4 id="enemySelected">Enemies Available To Attack</h4>
+            <h4 id="4">Enemies Available To Attack</h4>
         </div>
         <div class="fightSection">
             <h4>Fight Section</h4>
@@ -72,16 +73,16 @@
             <h4>Defender</h4>
 
             <div class="row">
-                <div class="char1 img1">
+                <div class="char9 img1">
                     <div class="labelchar1">Jabba The Hutt</div>
                 </div>
-                <div class="char2 img2">
+                <div class="char10 img2">
                     <div class="labelchar2">Stormtrooper</div>
                 </div>
-                <div class="char3 img3">
+                <div class="char11 img3">
                     <div class="labelchar3">Chewbacca</div>
                 </div>
-                <div class="char4 img4">
+                <div class="char12 img4">
                     <div class="labelchar4">Darth Vader</div>
                 </div>
             </div>
@@ -90,13 +91,21 @@
 
 
 
-            <button onclick="restartGame()">Start Game</button>
+            <button id="btnReset" onclick="restartGame()">Start Game</button>
 
         </div>
     </div>
+<!-- <script>
+    $(document).ready(function(){
+    $('.img1').click(function() {
+        alert("it works!");
+    });
+});
+</script> -->
+
 
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="assets/javascript/game.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
