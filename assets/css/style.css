@@ -32,6 +32,23 @@ p {
 
 }
 
+
+    .labelchar1-2,
+    .labelchar2-2, 
+    .labelchar3-2, 
+    .labelchar4-2 {
+        background-color: beige;
+        color: black;
+        font-style: bold;
+        position: relative;
+        top: 60px;
+        text-align: center;
+        font-size: 11px;
+        padding: 0px;
+
+    }
+
+
     .labelchar1, 
     .labelchar2, 
     .labelchar3, 
@@ -41,7 +58,7 @@ p {
         color: black;
         font-style: bold;
         position: relative;
-        top: 70px;
+        top: -15px;
         text-align: center;
         font-size: 11px;
         padding: 0px;
