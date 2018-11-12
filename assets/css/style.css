@@ -37,10 +37,18 @@ p {
 }
 
 
-    .labelchar1-2,
-    .labelchar2-2, 
-    .labelchar3-2, 
-    .labelchar4-2 {
+    #labelchar1-2,
+    #labelchar2-2, 
+    #labelchar3-2, 
+    #labelchar4-2, 
+    #labelchar5-2,
+    #labelchar6-2, 
+    #labelchar7-2, 
+    #labelchar8-2, 
+    #labelchar9-2,
+    #labelchar10-2, 
+    #labelchar11-2, 
+    #labelchar12-2 {
         background-color: beige;
         color: black;
         font-style: bold;
@@ -68,10 +76,11 @@ p {
         padding: 0px;
 
     }
-.img1 {
-        
-        
-    background-image: url("../images/JabbaTheHut.jpeg");
+.img1,
+.img2,
+.img3,
+.img4 {
+
     padding:0px;
     width: 100px;
     height: 80px;
@@ -79,50 +88,29 @@ p {
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-color: beige;
-    border-width: thick;
-
 
 }
 
+
+.img1 {
+          
+    background-image: url("../images/JabbaTheHut.jpeg");
+}
 
 .img2 {
     
     background-image: url("../images/stormtrooper.jpeg");
-    padding: 0px;
-    width: 100px;
-    height: 80px;
-    margin-right: 20px;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
+    
 }
-
 .img3 {
 
-    
     background-image: url("../images/Chewbacca.jpeg");
-    padding: 0px;
-    width: 100px;
-    height: 80px;
-    margin-right: 20px;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 
 }
-
 .img4 {
 
     background-image: url("../images/images.jpeg");
-    padding: 0px;
-    width: 100px;
-    height: 80px;
-    margin-right: 20px;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    
 
 }
 
