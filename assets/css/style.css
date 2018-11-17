@@ -1,6 +1,14 @@
 * {
     box-sizing: border-box;
 }
+#attack {
+    margin-left: 20px;
+
+}
+#btnReset {
+    margin-left: 20px;
+    margin-top: 20px;
+}
 
 
 .body {
@@ -18,7 +26,10 @@
 
 .starWars {
     color: white;
-    text-align: center; 
+    text-align: right; 
+}
+.space {
+    margin-bottom: 100px;
 }
 
 #h4-1,
@@ -27,12 +38,16 @@
 #h4-4,
 #h4-5  {
     color: ghostwhite;
-
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 p {
 
     color: black;
+    font-size: 30px;
+    font-display: bold;
 
 }
 
@@ -40,22 +55,44 @@ p {
     #labelchar1-2,
     #labelchar2-2, 
     #labelchar3-2, 
-    #labelchar4-2, 
+    #labelchar4-2 {
+        /* background-color: white; */
+        color: black;
+        font-style: bold;
+        position: relative;
+        top: 54px;
+        text-align: center;
+        font-size: 9px;
+        padding: 0px;
+
+    } 
+
     #labelchar5-2,
     #labelchar6-2, 
     #labelchar7-2, 
-    #labelchar8-2, 
+    #labelchar8-2 {
+        background-color: red;
+        color: white;
+        font-style: bold;
+        position: relative;
+        top: 54px;
+        text-align: center;
+        font-size: 9px;
+        padding: 0px;
+
+    } 
+
     #labelchar9-2,
     #labelchar10-2, 
     #labelchar11-2, 
     #labelchar12-2 {
-        background-color: beige;
-        color: black;
+        background-color: black;
+        color: white;
         font-style: bold;
         position: relative;
-        top: 60px;
+        top: 54px;
         text-align: center;
-        font-size: 11px;
+        font-size: 9px;
         padding: 0px;
 
     }
@@ -66,29 +103,95 @@ p {
     .labelchar3, 
     .labelchar4  {
 
-        background-color: beige;
+        background-color: white;
         color: black;
         font-style: bold;
         position: relative;
         top: -15px;
         text-align: center;
-        font-size: 11px;
+        font-size: 10px;
         padding: 0px;
 
     }
-.img1,
-.img2,
-.img3,
-.img4 {
 
-    padding:0px;
-    width: 100px;
-    height: 80px;
+    .labelchar5, 
+    .labelchar6, 
+    .labelchar7, 
+    .labelchar8  {
+
+        background-color: red;
+        color: white;
+        font-style: bold;
+        position: relative;
+        top: -15px;
+        text-align: center;
+        font-size: 10px;
+        padding: 0px;
+
+    }
+
+    .labelchar9, 
+    .labelchar10, 
+    .labelchar11, 
+    .labelchar12  {
+
+        background-color: black;
+        color: white;
+        font-style: bold;
+        position: relative;
+        top: -15px;
+        text-align: center;
+        font-size: 10px;
+        padding: 0px;
+
+    }
+    .img5,
+    .img6, 
+    .img7, 
+    .img8 {
+        width: 120px;
+        height: 100px;
+        margin-right: 20px;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding:1px;
+        border:15px; 
+        border-style: solid;
+        border-color: red;
+    }
+    .img9, 
+    .img10, 
+    .img11, 
+    .img12 {
+        width: 120px;
+        height: 100px;
+        margin-right: 20px;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding:1px;
+        border:15px; 
+        border-style: solid;
+        border-color: black;
+    }
+    
+    
+
+    .img1,
+    .img2,
+    .img3,
+    .img4 {
+    width: 120px;
+    height: 100px;
     margin-right: 20px;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
-
+    padding:1px;
+    border:15px; 
+    border-style: solid;
+    border-color: white;
 }
 
 
@@ -114,3 +217,45 @@ p {
 
 }
 
+.img5 {
+          
+    background-image: url("../images/JabbaTheHut.jpeg");
+}
+
+.img6 {
+    
+    background-image: url("../images/stormtrooper.jpeg");
+    
+}
+.img7 {
+
+    background-image: url("../images/Chewbacca.jpeg");
+
+}
+.img8 {
+
+    background-image: url("../images/images.jpeg");
+    
+
+}
+.img9 {
+          
+    background-image: url("../images/JabbaTheHut.jpeg");
+}
+
+.img10 {
+    
+    background-image: url("../images/stormtrooper.jpeg");
+    
+}
+.img11 {
+
+    background-image: url("../images/Chewbacca.jpeg");
+
+}
+.img12 {
+
+    background-image: url("../images/images.jpeg");
+    
+
+}

@@ -4,16 +4,28 @@ var playerSelected = 0
 var defenderSelected = 0
 var player
 var defender
+var defenderAp = 4
+var playerAp = 8
 var playerHp = 0
 var counterHp = 0
+var defNumber = 0
 
 
-var char1healthPower = 64
-var char2healthPower = 48
-var char3healthPower = 58
-var char4healthPower = 54
+var char1healthPower = 57
+var char2healthPower = 56
+var char3healthPower = 54
+var char4healthPower = 55
 
 
+function clearHp() {
+
+char1healthPower = 0
+char2healthPower = 0
+char3healthPower = 0
+char4healthPower = 0
+}
+
+//this places the Health Power in the bottom label of each player
 function healthPower() {
 
     document.getElementById("labelchar1-2").innerHTML = "HP: " + char1healthPower;
@@ -31,17 +43,45 @@ function healthPower() {
 
 
 }
+// restart function starts the game over resets all the variables to the starting values
+function restart() {
+$(".char1, .char2, .char3, .char4, #h4-3").show();
+$(".char5, .char6, .char7, .char8, .char9, .char10, .char11, .char12, #h4-1").hide();
+playerSelected = 0
+defenderSelected = 0
+player
+defender
+playerHp = 0
+playerAp = 8
+counterHp = 0
+defNumber = 0
+defenderAp = 4
+char1healthPower = 48
+char2healthPower = 52
+char3healthPower = 44
+char4healthPower = 46
+$("p").hide();
+$("attack").show();
+healthPower();
 
+}
+restart();
+
+// this sets the images to restart the game
+$("#btnReset").click(restart);
 
 
 
 
 
 //click the character of players choice then clear the other characters when img1 is clicked to select the character
+
+
 $(".char1").click(function () {
 
+
     if (playerSelected == 0) {
-        $(".char2, .char3, .char4, #h4-2").hide();
+        $(".char2, .char3, .char4, #h4-2, .space").hide();
         $(".char6, .char7, .char8, #h4-1").show();
         playerSelected = 1
         player = "char1"
@@ -54,7 +94,7 @@ $(".char1").click(function () {
 $(".char2").click(function () {
 
     if (playerSelected == 0) {
-        $(".char1, .char3, .char4, #h4-2").hide();
+        $(".char1, .char3, .char4, #h4-2, .space").hide();
         $(".char5, .char7, .char8, #h4-1").show();
         playerSelected = 1
         player = "char2"
@@ -65,7 +105,7 @@ $(".char3").click(function () {
 
 
     if (playerSelected == 0) {
-        $(".char1, .char2, .char4, #h4-2").hide();
+        $(".char1, .char2, .char4, #h4-2, .space").hide();
         $(".char5, .char6, .char8, #h4-1").show();
         playerSelected = 1
         player = "char3"
@@ -74,7 +114,7 @@ $(".char3").click(function () {
 });
 $(".char4").click(function () {
     if (playerSelected == 0) {
-        $(".char1, .char2, .char3, #h4-2").hide();
+        $(".char1, .char2, .char3, #h4-2, .space").hide();
         $(".char5, .char6, .char7, #h4-1").show();
         playerSelected = 1
         player = "char4"
@@ -92,7 +132,9 @@ $(".char5").click(function () {
         $(".char5").hide();
         $(".char9").show();
         defenderSelected = 1
-        defender = "char5"
+        defender = "char9"
+        defNumber ++
+        $("p").hide();
     }
 });
 
@@ -101,7 +143,9 @@ $(".char6").click(function () {
         $(".char6").hide();
         $(".char10").show();
         defenderSelected = 1
-        defender = "char6"
+        defender = "char10"
+        defNumber ++
+        $("p").hide();
     }
 });
 
@@ -110,7 +154,9 @@ $(".char7").click(function () {
         $(".char7").hide();
         $(".char11").show();
         defenderSelected = 1
-        defender = "char7"
+        defender = "char11"
+        defNumber ++
+        $("p").hide();
     }
 });
 
@@ -120,77 +166,94 @@ $(".char8").click(function () {
         $(".char8").hide();
         $(".char12").show();
         defenderSelected = 1
-        defender = "char8"
+        defender = "char12"
+        defNumber +
+        $("p").hide();
     }
 });
 
-
+// this function runs when the attack button is clicked on
 $("#attack").click(function () {
 
-
-
-
-
+// this switch looks for the charactor the player selected
+// so the health power is subtracted from the selected player
     switch (player) {
 
         case "char1":
-            char1healthPower -= 8
+            char1healthPower -= defenderAp
             playerHp = char1healthPower
             healthPower();
-            alert("char1" + playerHp);
             break;
         case "char2":
-            char2healthPower -= 4
+            char2healthPower -= defenderAp
             playerHp = char2healthPower
             healthPower();
             break;
         case "char3":
-            char3healthPower -= 2
+            char3healthPower -= defenderAp
             playerHp = char3healthPower
             healthPower();
             break;
         case "char4":
-            char4healthPower -= 6
+            char4healthPower -= defenderAp
             playerHp = char4healthPower
             healthPower();
             break;
     }
 
+    // this switch looks for the selected defender
+    // so the health power is subtracted from the selected defender
     switch (defender) {
 
-        case "char5":
-            char1healthPower -= 6
+        case "char9":
+            char1healthPower -= playerAp
             counterHp = char1healthPower
             healthPower();
             break;
-        case "char6":
-            char2healthPower -= 8
+        case "char10":
+            char2healthPower -= playerAp
             counterHp = char2healthPower
             healthPower();
             break;
 
-        case "char7":
-            char3healthPower -= 4
+        case "char11":
+            char3healthPower -= playerAp
             counterHp = char3healthPower
             healthPower();
             break;
 
-        case "char8":
-            char4healthPower -= 6
+        case "char12":
+            char4healthPower -= playerAp
             counterHp = char4healthPower
             healthPower();
             break;
     }
-
+// when the players health power is to zero game over/ else when the defenders power is to zero select another enemy to fight
     if (playerHp <= 0) {
-        $("p").append("You were defeated by" + devender);
-        alert(devender);
-        break;
+        $("#loose").show();
+        playerHp = 0
+        clearHp();
+        
+    }
+    else if (counterHp <= 0 && defNumber == 3) {
+        $("#winAll").show();
+        $("#win").hide();
+        $("attack").hide();
+        defenderSelected = 0
+        counterHp = 0
+        clearHp();
+        $(`.${defender}`).hide();
+        
     }
     else if (counterHp <= 0) {
-        $("p").append("");
-        alert(player);
-        break;
+        $("#win").show();
+        defenderSelected = 0
+        counterHp = 0
+        $(`.${defender}`).hide();
+        
+    }
+    else {playerAp ++
+        console.log(playerAp)
     }
 
 });
@@ -199,27 +262,6 @@ $("#attack").click(function () {
 
 
 
-// this sets the images to restart the game
-$("#btnReset").click(function () {
-    $(".char1, .char2, .char3, .char4, #h4-3").show();
-    $(".char5, .char6, .char7, .char8, .char9, .char10, .char11, .char12, #h4-1").hide();
-    playerSelected = 0
-    defenderSelected = 0
-    player
-    defender
-    playerHp = 0
-    playerAp = 0
-    counterHp = 0
-    attackValue = 6
 
-    char1healthPower = 64
-    char2healthPower = 48
-    char3healthPower = 58
-    char4healthPower = 54
-    healthPower();
-});
 
-// restartGame()
-
-// document.getElementById("btnReset").onclick = restartGame;
 
